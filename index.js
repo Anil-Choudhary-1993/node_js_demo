@@ -8,7 +8,7 @@ require('./startup/routes')(app)
 require('./startup/db')()
 require('./startup/config')
 require('./startup/validation')();
-
+require('./startup/prod')(app)
 
 // templating
 // app.set('view engine', 'pug')
